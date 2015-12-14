@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./client/stylesheets/styles.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div class="url-bar">
+        <ul id="tab-bar">
+          <li class="tab active">http://www.codesmith.io</li>
+        </ul>
+        <hr>
+        <input value="http://codesmith.io" id="url-input"/>
+        <button id="visit">Go</button>
+        <button id="new-tab">New Tab</button>
+      </div>
+    </div>
+
+    <div id="views">
+      <!-- Iframe on steroids -->
+      <webview src="http://www.codesmith.io" class="view active"></webview>
+    </div>
+
+    <!-- <h1>HELLO ELECTRON!</h1>
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>. -->
+
+    <script type="text/javascript" src="./client/javascript/renderer.js"></script>
+  </body>
+</html>
