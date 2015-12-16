@@ -16,6 +16,7 @@ $('#new-tab').click(function() {
   $('#views').append('<webview class="view active" src="' + url +'"></webview>');
 });
 
+// Still have to get this to work
 $('body').on('click','.tab', function() {
   $('.tab, .view').removeClass('active');
 
