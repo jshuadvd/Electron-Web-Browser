@@ -1,3 +1,4 @@
+// Require jQuery
 var $ = require('jquery');
 
 $('#visit').click(function() {
