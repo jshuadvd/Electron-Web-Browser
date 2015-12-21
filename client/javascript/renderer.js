@@ -3,12 +3,13 @@ var $ = require('jquery');
 
 $('#visit').click(function() {
   var url = $('#url-input').val();
+
   $('.tab.active').text(url);
   $('.view.active').attr('src', url);
 });
 
 $('#new-tab').click(function() {
-  var url =$('#url-input').val();
+  var url = $('#url-input').val();
 
   $('.tab, .view').removeClass('active');
 
