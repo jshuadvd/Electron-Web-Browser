@@ -17,6 +17,7 @@ $('#new-tab').click(function() {
 });
 
 // Still have to get this to work
+// This is a function to switch the tabs
 $('body').on('click','.tab', function() {
   $('.tab, .view').removeClass('active');
 
